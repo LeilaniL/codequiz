@@ -1,9 +1,20 @@
 $(document).ready(function() {
-   // var end = $("input#end").val()
+  // first question checks frontend or backend
+  $("form#quiz").submit(function(event){
+    alert($('input[name=whichEnd]:checked', '#quiz').val());
+  });
+    event.preventDefault();
+  });
 
-  if (end === "frontend") {
-    $("#CSSTrack").show();
-  } else {
-    $("#secondQuestion").show();
-  }
-});
+  // second question check
+//   $("form").submit(function(event){
+//     if ($('frontend').prop('checked'))
+//      {
+//       $("#CSSTrack").show();
+//     } else {
+//       $("#secondQuestion").show();
+//   }
+//     event.preventDefault();
+//   });
+
+// var isChecked = $('#rdSelect').is(':checked');

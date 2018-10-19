@@ -3,4 +3,8 @@ label {
 }
 div.radio {
   margin: 35px;
+  text-align: center;
+}
+#CSSTrack, #secondQuestion {
+  display: none;
 }
