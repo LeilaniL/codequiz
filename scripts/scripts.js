@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  // var end = $("input#end").val()
+   // var end = $("input#end").val()
 
   if (end === "frontend") {
     $("#CSSTrack").show();
