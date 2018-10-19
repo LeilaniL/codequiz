@@ -24,4 +24,18 @@ $(document).ready(function() {
       }
       event.preventDefault();
       });
+      // third question asks about companies
+      $("form#thirdQuestion").submit(function(event){
+        var checkedBox = ($('input[name=company]:checked', '#thirdQuestion').val());
+        if((checkedBox==="amazon")||(checkedBox==="netflix")){
+        $("#java").show();
+        }
+        else if(checkedBox==="facebook"){
+        $("#php").show()
+        }
+        else {
+        $(".radioFive").css('visibility', 'visible');
+        }
+        event.preventDefault();
+        });
   });
