@@ -14,6 +14,6 @@ div.radio {
   margin: 35px;
   text-align: center;
 }
-#CSSTrack, #secondQuestion {
+#CSSTrack {
   display: none;
 }

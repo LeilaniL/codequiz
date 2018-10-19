@@ -11,7 +11,7 @@
     <div class="container">
       <h1>What Programming Language Should You Learn First?</h1>
       <p>Picking a language when you're learning to code can be overwhelming. This quiz will offer some suggestions to help you choose.</p>
-      <form id="quiz" action="index.html" method="post">
+      <form id="firstQuestion" action="index.html" method="post">
         <!-- First Question -->
           <div id="radioOne">
             <p>Would you rather work on developing the front-end or back-end?</p>
@@ -30,37 +30,37 @@
             <button type="submit" name="button">Next</button>
           </div>
           <!-- test divs -->
-          <div id="CSSTrack">
-            <p>You should study CSS. Keep working on JavaScript, too!</p>
-          </div>
+          <p id="CSSTrack">You should study CSS. Keep working on JavaScript, too!</p>
+        </form>
           <!-- Second question -->
-          <div id="secondQuestion">
-            Second Question
-          </div>
-          <div class="radioTwo">
-            <p>What would you like to build?</p>
-            <label>
-              <input id="end" type="radio" name="whatBuild" value="apps">
-              Apps
-            </label>
-            <label>
-              <input type="radio" name="whatBuild" value="games">
-              Games
-            </label>
-            <label>
-              <input type="radio" name="whatBuild" value="cms">
-              Websites to display content
-            </label>
-            <label>
-              <input type="radio" name="whatBuild" value="biz">
-              Business software
-            </label>
-            <label>
-              <input type="radio" name="whatBuild" value="dunno">
-              I'm not sure
-            </label>
-          </div>
+          <form id="secondQuestion">
+            <div id="radioTwo">
+              <p>What would you like to build?</p>
+              <label>
+                <input id="end" type="radio" name="whatBuild" value="apps">
+                Apps
+              </label>
+              <label>
+                <input type="radio" name="whatBuild" value="games">
+                Games
+              </label>
+              <label>
+                <input type="radio" name="whatBuild" value="cms">
+                Websites to display content
+              </label>
+              <label>
+                <input type="radio" name="whatBuild" value="biz">
+                Business software
+              </label>
+              <label>
+                <input type="radio" name="whatBuild" value="dunno">
+                I'm not sure
+              </label>
+              <button type="submit" name="button">Next</button>
+            </div>
+          </form>
           <!-- Third question -->
+          <form>
           <div class="radioThree">
             <p>What's your favorite company?</p>
             <label>
@@ -83,34 +83,42 @@
               <input type="radio" name="company" value="other">
               None of the above
             </label>
-          </div>
+            <button type="submit" name="button">Next</button>
+            </form>
+            </div>
           <!-- Fourth question -->
           <div class="radioFour">
-            <p>Do you prefer to dive in and learn the easiest way first; or to thoroughly understand the fundamentals before trying things out?</p>
-            <label>
-              <input id="end" type="radio" name="difficulty" value="easy">
-              Easy way, I want to be building cool stuff already!
-            </label>
-            <label>
-              <input type="radio" name="difficulty" value="hard">
-              Deep understanding, so I have a solid foundation first.
-            </label>
+            <form>
+              <p>Do you prefer to dive in and learn the easiest way first; or to thoroughly understand the fundamentals before trying things out?</p>
+              <label>
+                <input id="end" type="radio" name="difficulty" value="easy">
+                Easy way, I want to be building cool stuff already!
+              </label>
+              <label>
+                <input type="radio" name="difficulty" value="hard">
+                Deep understanding, so I have a solid foundation first.
+              </label>
+              <button type="submit" name="button">Next</button>
+            </form>
           </div>
           <!-- Fifth question -->
           <div class="radioFive">
-            <p>Which trend sounds most exciting to work on?</p>
-            <label>
-              <input id="end" type="radio" name="trend" value="ai">
-              Artificial intelligence and machine learning
-            </label>
-            <label>
-              <input type="radio" name="trend" value="vr">
-              Virtual or augmented reality
-            </label>
-            <label>
-              <input type="radio" name="trend" value="nopeTrends">
-              I don't care what's trendy, classics are tried and true.
-            </label>
+            <form>
+              <p>Which trend sounds most exciting to work on?</p>
+              <label>
+                <input id="end" type="radio" name="trend" value="ai">
+                Artificial intelligence and machine learning
+              </label>
+              <label>
+                <input type="radio" name="trend" value="vr">
+                Virtual or augmented reality
+              </label>
+              <label>
+                <input type="radio" name="trend" value="nopeTrends">
+                I don't care what's trendy, classics are tried and true.
+              </label>
+              <button type="submit" name="button">Next</button>
+            </form>
           </div>
       </form>
     </div>
