@@ -1,20 +1,13 @@
 $(document).ready(function() {
   // first question checks frontend or backend
   $("form#quiz").submit(function(event){
-    alert($('input[name=whichEnd]:checked', '#quiz').val());
-  });
+    var checkedBox = ($('input[name=whichEnd]:checked', '#quiz').val());
+    if(checkedBox==="frontend"){
+      alert("yay");
+    }
+    else {
+      alert("sad");
+    }
     event.preventDefault();
+    });
   });
-
-  // second question check
-//   $("form").submit(function(event){
-//     if ($('frontend').prop('checked'))
-//      {
-//       $("#CSSTrack").show();
-//     } else {
-//       $("#secondQuestion").show();
-//   }
-//     event.preventDefault();
-//   });
-
-// var isChecked = $('#rdSelect').is(':checked');
