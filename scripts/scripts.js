@@ -38,4 +38,18 @@ $(document).ready(function() {
         }
         event.preventDefault();
         });
+        // fourth question asks about difficulty
+        $("form#fourthQuestion").submit(function(event){
+          var checkedBox = ($('input[name=difficulty]:checked', '#fourthQuestion').val());
+          if(checkedBox==="easy"){
+          $("#python").show();
+          }
+          else if(checkedBox==="hard"){
+          $("#java2").show();
+          }
+          else {
+          $(".radioFive").css('visibility', 'visible');
+          }
+          event.preventDefault();
+          });
   });
