@@ -31,7 +31,10 @@ $(document).ready(function() {
         $("#java").show();
         }
         else if(checkedBox==="facebook"){
-        $("#php").show()
+        $("#php").show();
+        }
+        else if(checkedBox==="microsoft"){
+        $("#csharp").show();
         }
         else {
         $(".radioFive").css('visibility', 'visible');
@@ -44,12 +47,23 @@ $(document).ready(function() {
           if(checkedBox==="easy"){
           $("#python").show();
           }
-          else if(checkedBox==="hard"){
-          $("#java2").show();
-          }
           else {
-          $(".radioFive").css('visibility', 'visible');
+          $("#java2").show();
           }
           event.preventDefault();
           });
+          // fifth question asks about interest
+          $("form#fifthQuestion").submit(function(event){
+            var checkedBox = ($('input[name=trend]:checked', '#fifthQuestion').val());
+            if(checkedBox==="ai"){
+            $("#python").show();
+            }
+            else if (checkedBox==="vr"){
+            $("#csharp").show();
+            }
+            else {
+              $("#java2").show();
+            }
+            event.preventDefault();
+            });
   });
