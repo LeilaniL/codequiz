@@ -26,11 +26,25 @@ var questionFive =
   '<label><input type="radio" name="trend" value="ai">Artificial intelligence and machine learning</label>' +
   '<label><input type="radio" name="trend" value="vr">Virtual or augmented reality</label>' +
   '<label><input type="radio" name="trend" value="nopeTrends">I don\'t care what\'s trendy, classics are tried and true.</label>';
+var answer =
 
 $(document).ready(function() {
   $('.question').html(questionOne);
+  var i = 1;
   $('form').submit(function(event) {
-    $('.question').html(questionTwo);
     event.preventDefault();
+    var blanks = [
+      questionOne,
+      questionTwo,
+      questionThree,
+      questionFour,
+      questionFive,
+  
+    ];
+ 
+      $('.question').html(blanks[i]);
+      i++;
+      
+    });
   });
-});
+
