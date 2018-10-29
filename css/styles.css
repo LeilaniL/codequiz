@@ -14,8 +14,4 @@ div.radio {
   margin: 35px;
   text-align: center;
 }
-#CSSTrack, #php, #java, #python, #java2, #csharp {
-  display: none;
-  font-weight: bold;
-  color: blue;
-}
+

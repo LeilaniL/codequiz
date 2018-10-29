@@ -31,14 +31,29 @@ var answerPhp='<p id="php">You might like to learn php!</p>';
 var answerJava='<p id="java">Check out Java! It\'s widely used, and helps you understand the inner workings of a program in more detail.</p>';
 var answerCSharp='<p id="csharp">C# was developed by Microsoft, but is used in a variety of applications.</p>';
 var answerPython='<p id="python"> Python is easy to get started with. You should try it!</p>';
+var answer="";
 var blanks = [
   questionOne,
   questionTwo,
   questionThree,
   questionFour,
-  questionFive
+  questionFive,
+  answer
 ];
 var answerArray = [];
+var getAnswer = function(answerArray) {
+  if (answerArray[0]==="frontend") {
+    return answer = answerCSS;
+} else if ((answerArray[3]==="easy") | (answerArray[4]==="ai")){
+    return answer = answerPython;
+} else if ((answerArray[2]==="microsoft") | (answerArray[4]==="vr")){
+    return answer = answerCSharp;
+} else if ((answerArray[1]==="cms") | (answerArray[2]==="facebook")){
+    return answer = answerPhp;
+} else  {
+    return answer = answerJava;
+}
+};
 $(document).ready(function() {
   var i = 0;
   $('.question').html(blanks[i]);
@@ -64,6 +79,11 @@ $(document).ready(function() {
         case 4:
           var checkedBox = ($('input[name=questionFive]:checked').val());
           answerArray.push(checkedBox);
+          getAnswer(answerArray);
+          break;
+        case 5:
+          debugger;
+          $('.answer').append(answer);
           break;
       }
       i++;
