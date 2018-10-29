@@ -1,11 +1,14 @@
-/* form div {
-  visibility: hidden;
-} */
-#radioOne {
-visibility: visible;
-}
 body {
   text-align: center;
+  background-color: 
+}
+form {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-family: monospace;
+  font-size: 22px;
+  background-color: lightcyan;
+  border-radius: 3%;
 }
 label {
   display: block;
@@ -13,5 +16,10 @@ label {
 div.radio {
   margin: 35px;
   text-align: center;
+}
+.answer {
+  font-weight: bold;
+  color: navy;
+  font-size: 26px;
 }
 

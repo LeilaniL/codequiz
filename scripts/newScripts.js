@@ -26,11 +26,11 @@ var questionFive =
   '<label><input type="radio" name="questionFive" value="ai">Artificial intelligence and machine learning</label>' +
   '<label><input type="radio" name="questionFive" value="vr">Virtual or augmented reality</label>' +
   '<label><input type="radio" name="questionFive" value="nopeTrends">I don\'t care what\'s trendy, classics are tried and true.</label>';
-var answerCSS = '<p id="CSSTrack">You should study CSS. Keep working on JavaScript, too!</p>';
+var answerCSS = '<p id="CSSTrack">You should study CSS and HTML. Keep working on JavaScript, too!</p>';
 var answerPhp='<p id="php">You might like to learn php!</p>';
 var answerJava='<p id="java">Check out Java! It\'s widely used, and helps you understand the inner workings of a program in more detail.</p>';
-var answerCSharp='<p id="csharp">C# was developed by Microsoft, but is used in a variety of applications.</p>';
-var answerPython='<p id="python"> Python is easy to get started with. You should try it!</p>';
+var answerCSharp='<p id="csharp">Take a look at C#. It was developed by Microsoft, but is used in a variety of applications.</p>';
+var answerPython='<p id="python"> Python is easy to get started with, and used in machine learning and many other kinds of applications. You should try it!</p>';
 var answer="";
 var blanks = [
   questionOne,
@@ -80,9 +80,6 @@ $(document).ready(function() {
           var checkedBox = ($('input[name=questionFive]:checked').val());
           answerArray.push(checkedBox);
           getAnswer(answerArray);
-          break;
-        case 5:
-          debugger;
           $('.answer').append(answer);
           break;
       }
