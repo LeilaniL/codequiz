@@ -6,7 +6,7 @@
 This is a quiz to help users determine what programming language they should study first. It's built with jQuery and Bootstrap, and was a project to practice branching and forms after the second week of Epicodus.
 
 ## Setup
-After cloning or downloading the repository, open the index.html file in your browser. You can also view the site at http://leilanil.githubpages.io/codequiz
+After cloning or downloading the repository, open the index.html file in your browser. You can also view the site at http://leilanil.github.io/codequiz
 
 ## Languages and Libraries
 * JavaScript
